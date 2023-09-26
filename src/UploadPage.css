@@ -1,0 +1,133 @@
+/* Overall page styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+.upload-page {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(180deg, #0092cd, #4fe21b);
+
+  }
+  
+  .leftpanel {
+    /* flex: 1 1; */
+    padding: 10px;
+    display: block;
+    height: 100%;
+    width: 50%;
+}
+  
+  .icon {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+.rightpanel {
+    padding: 52px 75px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 9px 9px 10px 0px rgba(0, 0, 0, 3.1);
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    right: 77px;
+}
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitbutton {
+    background-color: #ff8800;
+    color: #fff;
+    width: 330px;
+    margin: 30px 60px;
+}
+  
+.connectbutton {
+  background-color: #28a745;
+  color: #fff;
+  margin-left: 19px;
+  margin-right: 0px;
+}
+  
+  /* Input and form styles */
+  input[type="file"], input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  input[type="file"] {
+    margin-top: 0;
+    width:99%;
+    display: block;
+  }
+  
+#address {
+  width: 69%;
+  margin-right: 10px;
+}
+  /* label[for  = "address"] {
+    display: block;
+  } */
+  /* Label styles */
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Heading styles */
+  .upload-selfie-and-container {
+    font-size: 38px;
+    margin: 10px 10px;
+}
+  h1{
+    text-align: center;
+  }
+  /* Other styles */
+  .ksn {
+    color: #ff8800;
+    font-weight: bolder;
+  }
+  
+  /* Responsive styles (adjust as needed) */
+  @media (max-width: 768px) {
+    .upload-page {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .rightpanel {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    
+    .connectbutton,
+    input[type="file"],
+    input[type="text"],
+    input[type="email"] {
+      width:fit-content;
+    }
+    
+  }
+  .btn {
+    border-color: transparent;
+  }
